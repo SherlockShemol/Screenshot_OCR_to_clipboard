@@ -27,7 +27,7 @@ txts = [line[1][0] for line in result]
 contents = ""
 
 for content in result:
-    contents = contents + '\n' + content[1][0]
+    contents = contents + content[1][0] + '\n'
 
 pyperclip.copy(contents)
 
